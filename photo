@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>John Doe Photography</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#111;
+    color:white;
+}
+
+header{
+    height:100vh;
+    background:url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee")
+    center/cover;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.hero{
+    background:rgba(0,0,0,0.5);
+    padding:2rem;
+}
+
+.hero h1{
+    font-size:4rem;
+}
+
+.hero p{
+    margin-top:1rem;
+    font-size:1.2rem;
+}
+
+.gallery{
+    padding:4rem 10%;
+}
+
+.gallery h2{
+    margin-bottom:2rem;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+}
+
+.grid img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.contact{
+    padding:4rem 10%;
+    text-align:center;
+}
+
+footer{
+    padding:2rem;
+    text-align:center;
+    background:#000;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="hero">
+        <h1>John Doe Photography</h1>
+        <p>Capturing moments around the world.</p>
+    </div>
+</header>
+
+<section class="gallery">
+    <h2>Portfolio</h2>
+
+    <div class="grid">
+        <img src="https://picsum.photos/600/800?1">
+        <img src="https://picsum.photos/600/800?2">
+        <img src="https://picsum.photos/600/800?3">
+        <img src="https://picsum.photos/600/800?4">
+        <img src="https://picsum.photos/600/800?5">
+        <img src="https://picsum.photos/600/800?6">
+    </div>
+</section>
+
+<section class="contact">
+    <h2>Contact</h2>
+    <p>email@example.com</p>
+</section>
+
+<footer>
+    <p>© 2026 John Doe Photography</p>
+</footer>
+
+</body>
+</html>
